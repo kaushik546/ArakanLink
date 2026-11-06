@@ -1,4 +1,6 @@
-﻿namespace ArakanLink
+﻿using ArakanLink.ViewModels;
+
+namespace ArakanLink
 {
     public partial class MainPage : ContentPage
     {
@@ -7,6 +9,7 @@
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainPageVM();
         }
 
         private void OnCounterClicked(object? sender, EventArgs e)
